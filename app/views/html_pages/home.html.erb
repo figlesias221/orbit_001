@@ -1,8 +1,11 @@
-<%
-=begin%>
- <% provide(:title, "Home") %> 
-<%
-=end%>
+<% provide(:title, "Home") %> 
 
-<h1>Orbit Home</h1>
-<p>Find me in app/views/html_pages/home.html.erb</p>
+<div class = "center jumbotron"> 
+  <h1> Welcome to Orbit </h1> 
+  <h2> 
+    This is the home page for the Orbit app
+    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> 
+    sample application. 
+  </h2> 
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
