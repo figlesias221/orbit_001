@@ -13,6 +13,10 @@ gem "bcrypt"
 gem "sqlite3", "~> 1.4"
 gem 'bootstrap-sass'# Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
+gem 'webpacker', '~> 5.0'
+gem 'faker'
+gem 'will_paginate', '~> 3.3.0'
+gem 'bootstrap-will_paginate', '~> 1.0.0'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
