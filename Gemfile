@@ -5,7 +5,7 @@ ruby "2.7.7"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"
-
+gem 'active_storage_validations'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 gem "bcrypt"
@@ -17,7 +17,8 @@ gem 'webpacker', '~> 5.0'
 gem 'faker'
 gem 'will_paginate', '~> 3.3.0'
 gem 'bootstrap-will_paginate', '~> 1.0.0'
-
+gem 'image_processing'
+gem 'mini_magick'
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 gem 'rails-controller-testing'
