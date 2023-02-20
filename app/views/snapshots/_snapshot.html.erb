@@ -2,7 +2,7 @@
   <%= link_to gravatar_for(snapshot.user), snapshot.user %>
   <span class="user"><%= link_to snapshot.user.name, snapshot.user %></span>
   <span class="content"><%= snapshot.content %></span>
-  <%= image_tag snapshot.dispaly_image if snapshot.image.attached? %>
+  <%= image_tag snapshot.display_image if snapshot.image.attached? %>
   <span class="timestamp">
     Posted <%= time_ago_in_words(snapshot.created_at) %> ago.
     <% if current_user?(snapshot.user) %>

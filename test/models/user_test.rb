@@ -68,4 +68,15 @@ class UserTest < ActiveSupport::TestCase
       @user.destroy
     end
   end
+
+  test "should follow and unfollow a user" do
+    tony = User.create(name: "Tony Stark", email: "ww@www.com", password: "password", password_confirmation: "password")
+    archer = User.create(name: "Sterling Archer", email: "ew@we.com", password: "password", password_confirmation: "password")
+    assert_not tony.following?(archer)
+    tony.follow(archer)
+    assert tony.following?(archer)
+    assert archer.followers.include?(tony)
+    tony.unfollow(archer)
+    assert_not tony.following?(archer)
+  end
 end
